@@ -1,0 +1,19 @@
+{
+  "name": "thermaldataex",
+  "version": "1.0.0",
+  "description": "Extraer la información térmica de una imagen de camaras FLIR",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js test.jpg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkatorMr/ThermalDataEX.git"
+  },
+  "author": "Marcos Pereson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkatorMr/ThermalDataEX/issues"
+  },
+  "homepage": "https://github.com/AkatorMr/ThermalDataEX#readme"
+}
