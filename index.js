@@ -3,7 +3,7 @@ const { exec,spawn, spawnSync } = require("child_process");
 const {writeFileSync} = require("fs");
 const {appendFileSync} = require("fs");
 
-const Jimp = require("jimp");
+// const Jimp = require("jimp");
 const PNG = require("pngjs").PNG;
 
 //import { createReadStream, appendFileSync, w, writeFileSync } from 'fs';
@@ -35,14 +35,18 @@ var exif_rti = spawnSync("exiftool.exe",["-RawThermalImage","-b",image_path]);
 });*/
 
 writeFileSync("out.png",exif_rti.stdout,"binary");
+
+
+
+
 new PNG().parse(exif_rti.stdout, function (error, image) {
     
     let w = image.width;
     let h= image.height;
     //console.log(h,w);
     //image.greyscale();
-    //console.log(image.bitmap.data);
-    console.log(image.data.read );
+    console.log(image.data);
+    //console.log(image.data.read );
     /* 
     for(let y =0;y<h;y++){
         for(let x =0;x<w;x++){

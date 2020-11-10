@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/AkatorMr/ThermalDataEX#readme",
   "dependencies": {
-    "jimp": "^0.16.1",
     "pngjs": "^6.0.0"
   }
 }
